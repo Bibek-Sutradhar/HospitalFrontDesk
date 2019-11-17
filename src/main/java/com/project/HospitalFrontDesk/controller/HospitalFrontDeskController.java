@@ -46,8 +46,6 @@ public class HospitalFrontDeskController {
 		if(null != specialistConfig) {
 			specialistTypes = specialistConfig.getSpecialist();	
 		}
-		try {
-			
 			Iterator<SpecialistType> itr = specialistTypes.iterator();
 			
 			while(itr.hasNext()) {
@@ -74,9 +72,6 @@ public class HospitalFrontDeskController {
 				throw new InvalidSpecialistException(speciatlistType);
 			}
 			
-		}catch(Exception ex) {
-			
-		}
 		return ResponseEntity.ok(selectedSpecialist);//specialistTypes;
 	}
 }
