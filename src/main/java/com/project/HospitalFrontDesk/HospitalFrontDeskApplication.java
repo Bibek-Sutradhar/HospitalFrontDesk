@@ -1,0 +1,13 @@
+package com.project.HospitalFrontDesk;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HospitalFrontDeskApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HospitalFrontDeskApplication.class, args);
+	}
+
+}
