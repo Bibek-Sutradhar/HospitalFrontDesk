@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AppConfig {
 	
-	@Value("${hospital.specialist}")
+	@Value("${get.specialist.url}")
 	private String appURL;
 	
 	public String getAppURL() {
